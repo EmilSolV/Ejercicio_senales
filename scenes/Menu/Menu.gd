@@ -16,3 +16,7 @@ func _on_reset_button_down():
 		
 	instancesCount = 0
 	$CountLabel.text = "Cantidad de instancias: " + str(instancesCount)
+
+func count_new_instance():
+	instancesCount += 1
+	$CountLabel.text = "Cantidad de instancias: " + str(instancesCount)
